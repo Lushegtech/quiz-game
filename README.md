@@ -25,6 +25,8 @@ Run the development server:
 
 npm run dev
 
+```bash
+
 /
 ├── public/                   # Static assets (images, favicon, etc.)
 ├── src/
@@ -53,6 +55,8 @@ npm run dev
 ├── tailwind.config.js        # Tailwind CSS configuration
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # Documentation for the project
+
+```bash
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
