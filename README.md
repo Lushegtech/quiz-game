@@ -56,7 +56,11 @@ npm run dev
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # Documentation for the project
 
-```bash
+```
+
+Installation
+
+```
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
