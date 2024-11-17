@@ -24,6 +24,11 @@ npm install
 Run the development server:
 
 npm run dev
+<<<<<<< HEAD
+=======
+
+```bash
+>>>>>>> 19d437c0ed3b297c8c6fed76f98c7068d0eebed4
 
 /
 ├── public/                   # Static assets (images, favicon, etc.)
@@ -53,6 +58,15 @@ npm run dev
 ├── tailwind.config.js        # Tailwind CSS configuration
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # Documentation for the project
+<<<<<<< HEAD
+=======
+
+```
+
+Installation
+
+```
+>>>>>>> 19d437c0ed3b297c8c6fed76f98c7068d0eebed4
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
