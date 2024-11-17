@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "target": "ES6",
+    "baseUrl": "./",
+    "paths": {
+      "@utils/*": ["src/utils/*"]
+    },
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "strict": true
+  }
+}
