@@ -1,44 +1,58 @@
-# Astro Starter Kit: Basics
+# 📚 Quiz Game Project
 
-```sh
-npm create astro@latest -- --template basics
-```
+Welcome to the **Quiz Game** project! This application uses **Astro**, **React**, and **Tailwind CSS** to deliver a dynamic, visually appealing quiz experience. Features include:
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+- 🏆 **Leaderboard** to display top scores.
+- ⏳ **Timer** for added challenge.
+- 📝 **Feedback modal** to collect user insights.
+- 📱 **Responsive design** for seamless interaction on any device.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🚀 Getting Started
 
-## 🚀 Project Structure
+To set up the project locally:
 
-Inside of your Astro project, you'll see the following folders and files:
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd quiz-game
 
-```text
+Install dependencies:
+
+npm install
+Run the development server:
+
+npm run dev
+
 /
-├── public/
-│   └── favicon.svg
+├── public/                   # Static assets (images, favicon, etc.)
 ├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+│   ├── components/           # Reusable UI components
+│   │   ├── Card.astro        # Quiz card component
+│   │   ├── FeedbackModal.tsx # User feedback modal
+│   │   ├── Footer.tsx        # Footer section
+│   │   ├── Leaderboard.tsx   # Leaderboard display
+│   │   ├── LoadingSpinner.tsx # Loading spinner for async actions
+│   │   ├── QuestionCard.tsx  # Quiz question card
+│   │   ├── QuizPage.tsx      # Main quiz page logic
+│   │   ├── ScoreDisplay.tsx  # Displays the user's score
+│   │   └── Timer.tsx         # Countdown timer
+│   ├── data/                 # Quiz data and other static content
+│   ├── layouts/              # Layout components for consistent design
+│   │   └── MainLayout.tsx    # Wrapper for pages
+│   ├── pages/                # Page components
+│   │   ├── index.astro       # Home page
+│   │   ├── leaderboard.astro # Leaderboard page
+│   │   └── quiz.astro        # Quiz page
+│   ├── styles/               # Global and component-specific styles
+│   └── utils/                # Utility functions
+├── .vscode/                  # VSCode editor settings
+├── astro.config.mjs          # Astro configuration file
+├── postcss.config.js         # PostCSS configuration file
+├── tailwind.config.js        # Tailwind CSS configuration
+├── tsconfig.json             # TypeScript configuration
+└── README.md                 # Documentation for the project
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -49,6 +63,4 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
