@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   integrations: [
     tailwind({
-      config: { path: './tailwind.config.mjs' }
+      config: { path: './tailwind.config.js' }
     }),
     react()
   ]
