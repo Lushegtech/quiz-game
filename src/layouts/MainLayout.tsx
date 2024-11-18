@@ -1,6 +1,7 @@
 import type { FC, ReactNode } from "react";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
+import "../styles/globals.css";
 
 interface MainLayoutProps {
   title: string;
