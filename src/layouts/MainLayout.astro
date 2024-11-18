@@ -1,7 +1,6 @@
 ---
 import { motion } from "framer-motion";
 import Footer from "../components/Footer";
-import "../styles/globals.css";
 
 interface Props {
   title: string;
@@ -12,14 +11,14 @@ const { title } = Astro.props;
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
-    <link rel="stylesheet" href={Astro.resolve("../styles/globals.css")} />
+    <link rel="stylesheet" href="../styles/globals.css" />
   </head>
   <body>
     <div class="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-gray-100">
-      <header class="bg-white shadow-sm" id="header">
+      <header class="bg-white shadow-sm" id="animated-header">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div class="flex justify-between items-center">
             <h1 class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">
@@ -47,19 +46,20 @@ const { title } = Astro.props;
       </main>
       <Footer client:load />
     </div>
+
+    <script>
+      // Add animation using JavaScript since we can't use framer-motion directly in Astro
+      const header = document.getElementById('animated-header');
+      if (header) {
+        header.style.transform = 'translateY(-20px)';
+        header.style.opacity = '0';
+        header.style.transition = 'all 0.5s ease-out';
+        
+        requestAnimationFrame(() => {
+          header.style.transform = 'translateY(0)';
+          header.style.opacity = '1';
+        });
+      }
+    </script>
   </body>
 </html>
-
-<script>
-  // Add the animation using vanilla JS since we can't use framer-motion directly in Astro
-  const header = document.getElementById('header');
-  if (header) {
-    header.style.transform = 'translateY(-20px)';
-    header.style.opacity = '0';
-    setTimeout(() => {
-      header.style.transform = 'translateY(0)';
-      header.style.opacity = '1';
-      header.style.transition = 'all 0.5s ease-out';
-    }, 0);
-  }
-</script>
