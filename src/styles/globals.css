@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .text-text {
-    @apply text-gray-800; /* Replace this with the desired Tailwind utility class */
-  }
+body {
+  font-family: 'Inter', sans-serif;
 }
