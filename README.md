@@ -13,21 +13,21 @@ Welcome to the **Quiz Game** project! This application uses **Astro**, **React**
 
 To set up the project locally:
 
-1. **Clone the repository**:
+**Clone the repository**:
    ```bash
    git clone https://github.com/Lushegtech/quiz-game
    cd quiz-game
 
-Install dependencies:
+**Install dependencies**:
 ```
 npm install
 ```
-Run the development server:
+**Run the development server**:
 
 ```bash
 npm run dev
 ```
-Project Directory
+**Project Directory**
 ```bash
 
 ├── public/                   # Static assets (images, favicon, etc.)
@@ -60,8 +60,6 @@ Project Directory
 
 
 ```
-
-Installation
 
 ```bash
 
