@@ -18,16 +18,16 @@ To set up the project locally:
    git clone https://github.com/Lushegtech/quiz-game
    cd quiz-game
 
-**Install dependencies**:
+Install dependencies:
 ```
 npm install
 ```
-**Run the development server**:
+Run the development server:
 
 ```bash
 npm run dev
 ```
-**Project Directory**
+Project Directory
 ```bash
 
 ├── public/                   # Static assets (images, favicon, etc.)
