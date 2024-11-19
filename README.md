@@ -18,10 +18,9 @@ To set up the project locally:
    git clone https://github.com/Lushegtech/quiz-game
    cd quiz-game
 ```
-
+```
 Install dependencies:
 ```bash
-
 npm install
 ```
 Run the development server:
