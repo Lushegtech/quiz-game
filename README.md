@@ -20,7 +20,7 @@ To set up the project locally:
 
 Install dependencies:
 ```
-```bash
+
 npm install
 ```
 Run the development server:
