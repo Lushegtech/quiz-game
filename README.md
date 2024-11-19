@@ -1,6 +1,6 @@
 # 📚 Quiz Game Project
 
-Welcome to the **Quiz Game** project! This application uses **Astro**, **React**, and **Tailwind CSS** to deliver a dynamic, visually appealing quiz experience. Features include:
+Welcome to the **Quiz Game** project! This application uses **Astro**,**TypeScript**, **React**, and **Tailwind CSS** to deliver a dynamic, visually appealing quiz experience. Features include:
 
 - 🏆 **Leaderboard** to display top scores.
 - ⏳ **Timer** for added challenge.
