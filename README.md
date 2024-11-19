@@ -15,7 +15,7 @@ To set up the project locally:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Lushegtech/quiz-game
    cd quiz-game
 ```
 
@@ -31,7 +31,6 @@ npm run dev
 Project Directory
 ```bash
 
-/
 ├── public/                   # Static assets (images, favicon, etc.)
 ├── src/
 │   ├── components/           # Reusable UI components
@@ -59,15 +58,13 @@ Project Directory
 ├── tailwind.config.js        # Tailwind CSS configuration
 ├── tsconfig.json             # TypeScript configuration
 └── README.md                 # Documentation for the project
-<<<<<<< HEAD
-=======
+
 
 ```
 
 Installation
 
-```
->>>>>>> 19d437c0ed3b297c8c6fed76f98c7068d0eebed4
+```bash
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
