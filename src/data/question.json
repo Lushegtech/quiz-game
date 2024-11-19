@@ -2,33 +2,33 @@
     "questions": [
       {
         "id": 1,
-        "text": "What is the capital of France?",
-        "options": ["London", "Berlin", "Paris", "Madrid"],
+        "text": "If a penguin invited you to dinner, what would most likely be on the menu?",
+        "options": ["Pizza", "Burgers", "Fish", "Salad"],
         "correctAnswer": 2
       },
       {
         "id": 2,
-        "text": "Which planet is known as the Red Planet?",
-        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "text": "Which of these could be a superhero's secret hideout?",
+        "options": ["Ice cream shop", "Cave", "Library", "Gym"],
         "correctAnswer": 1
       },
       {
         "id": 3,
-        "text": "What is the largest mammal in the world?",
-        "options": ["African Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
-        "correctAnswer": 1
+        "text": "If animals had jobs, what would an octopus be best at?",
+        "options": ["Juggler", "Chef", "Pianist", "Painter"],
+        "correctAnswer": 0
       },
       {
         "id": 4,
-        "text": "Which element has the chemical symbol 'Au'?",
-        "options": ["Silver", "Copper", "Gold", "Iron"],
-        "correctAnswer": 2
+        "text": "What would dinosaurs probably use as alarm clocks?",
+        "options": ["Smaller dinosaurs", "Volcanoes", "Coconuts", "Waterfalls"],
+        "correctAnswer": 0
       },
       {
         "id": 5,
-        "text": "Who painted the Mona Lisa?",
-        "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-        "correctAnswer": 2
+        "text": "If clouds could talk, what would they most likely gossip about?",
+        "options": ["Weather forecasts", "Birds' fashion", "Rainbow colors", "Wind speed"],
+        "correctAnswer": 1
       }
     ]
   }
