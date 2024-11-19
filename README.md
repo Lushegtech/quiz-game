@@ -19,16 +19,16 @@ To set up the project locally:
    cd quiz-game
 ```
 
-Install dependencies:
+**Install dependencies**:
 ```
 npm install
 ```
-Run the development server:
+**Run the development server**:
 
 ```bash
 npm run dev
 ```
-Project Directory
+**Project Directory**
 ```bash
 
 ├── public/                   # Static assets (images, favicon, etc.)
