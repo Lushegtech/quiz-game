@@ -1,6 +1,6 @@
 # 📚 Quiz Game
 
-This application uses **Astro**,**TypeScript**, **React**, and **Tailwind CSS** to deliver a dynamic, visually appealing quiz experience. Features include:
+This application is built using **Astro**,**TypeScript**, **React**, and **Tailwind CSS** for a user-centric quiz experience. Features include:
 
 - 🏆 **Leaderboard** to display top scores.
 - ⏳ **Timer** for added challenge.
