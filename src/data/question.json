@@ -29,6 +29,6 @@
       "text": "Which is the most common means of public transportation in Lagos?",
       "options": ["Danfo", "Keke NAPEP", "Okada", "BRT"],
       "correctAnswer": 0
-    },
+    }
   ]
 }
