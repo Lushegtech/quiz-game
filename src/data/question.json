@@ -1,34 +1,34 @@
 {
-    "questions": [
-      {
-        "id": 1,
-        "text": "If a penguin invited you to dinner, what would most likely be on the menu?",
-        "options": ["Pizza", "Burgers", "Fish", "Salad"],
-        "correctAnswer": 2
-      },
-      {
-        "id": 2,
-        "text": "Which of these could be a superhero's secret hideout?",
-        "options": ["Ice cream shop", "Cave", "Library", "Gym"],
-        "correctAnswer": 1
-      },
-      {
-        "id": 3,
-        "text": "If animals had jobs, what would an octopus be best at?",
-        "options": ["Juggler", "Chef", "Pianist", "Painter"],
-        "correctAnswer": 0
-      },
-      {
-        "id": 4,
-        "text": "What would dinosaurs probably use as alarm clocks?",
-        "options": ["Smaller dinosaurs", "Volcanoes", "Coconuts", "Waterfalls"],
-        "correctAnswer": 0
-      },
-      {
-        "id": 5,
-        "text": "If clouds could talk, what would they most likely gossip about?",
-        "options": ["Weather forecasts", "Birds' fashion", "Rainbow colors", "Wind speed"],
-        "correctAnswer": 1
-      }
-    ]
-  }
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which of these ingredients is most essential in making Jollof rice?",
+      "options": ["Tomatoes", "Curry powder", "Bay leaves", "Thyme"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 2,
+      "text": "What is the most popular Nigerian street food snack?",
+      "options": ["Gala", "Kilishi", "Chin chin", "Puff puff"],
+      "correctAnswer": 0
+    },
+    {
+      "id": 3,
+      "text": "Which Nigerian music genre originated from Lagos in the 1960s?",
+      "options": ["Afrobeats", "Juju", "Highlife", "Fuji"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 4,
+      "text": "In a typical Nigerian home, what's the most common way to preserve food when NEPA takes light?",
+      "options": ["Generator", "Cool box with ice", "Leave windows open", "Buy fresh daily"],
+      "correctAnswer": 1
+    },
+    {
+      "id": 5,
+      "text": "Which is the most common means of public transportation in Lagos?",
+      "options": ["Danfo", "Keke NAPEP", "Okada", "BRT"],
+      "correctAnswer": 0
+    },
+  ]
+}
