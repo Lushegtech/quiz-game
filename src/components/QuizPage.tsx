@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import QuestionCard from "./QuestionCard";
 import Timer from "./Timer";
@@ -7,7 +7,6 @@ import ScoreDisplay from "./ScoreDisplay";
 import LoadingSpinner from "./LoadingSpinner";
 import { loadQuestions } from "../utils/questionLoader";
 import type { Question } from "../utils/questionLoader";
-import '../styles/globals.css';
 
 const QuizPage = () => {
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -18,15 +17,23 @@ const QuizPage = () => {
   const [isCorrect, setIsCorrect] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [timeSpent, setTimeSpent] = useState(0);
-
+  const startTimeRef = useRef<number>(Date.now());
+  
   useEffect(() => {
     const initQuiz = async () => {
       const loadedQuestions = await loadQuestions();
       setQuestions(loadedQuestions);
       setLoading(false);
+      startTimeRef.current = Date.now();
     };
     initQuiz();
   }, []);
+
+  const updateTimeSpent = () => {
+    const currentTime = Date.now();
+    const timeElapsed = Math.floor((currentTime - startTimeRef.current) / 1000);
+    setTimeSpent(timeElapsed);
+  };
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -44,11 +51,13 @@ const QuizPage = () => {
     if (nextIndex < questions.length) {
       setCurrentQuestionIndex(nextIndex);
     } else {
+      updateTimeSpent();
       setQuizCompleted(true);
     }
   };
 
   const handleTimeUp = () => {
+    updateTimeSpent();
     setQuizCompleted(true);
   };
 
@@ -64,7 +73,10 @@ const QuizPage = () => {
     >
       {!quizCompleted ? (
         <div className="max-w-4xl mx-auto">
-          <Timer duration={30} onTimeUp={handleTimeUp} />
+          <Timer 
+            duration={30} 
+            onTimeUp={handleTimeUp}
+          />
           {currentQuestion && (
             <QuestionCard
               question={currentQuestion.text}
@@ -84,11 +96,12 @@ const QuizPage = () => {
       ) : (
         <ScoreDisplay 
           score={score} 
-          totalQuestions={questions.length} 
+          totalQuestions={questions.length}
+          timeSpent={timeSpent}
         />
       )}
     </motion.div>
   );
 };
 
-export default QuizPage; 
+export default QuizPage;
