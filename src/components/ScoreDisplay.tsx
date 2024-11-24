@@ -2,16 +2,31 @@ import type { FunctionComponent } from "react";
 import { useEffect } from "react";
 import confetti from 'canvas-confetti';
 import { motion } from "framer-motion";
-import { Trophy, Star, Award } from 'lucide-react';
+import { Trophy, Star, Award, Clock } from 'lucide-react';
 import { saveScore } from "../utils/scoreTracker";
-import '../styles/globals.css';
 
 interface ScoreDisplayProps {
   score: number;
   totalQuestions: number;
+  timeSpent: number;
 }
 
-const ScoreDisplay: FunctionComponent<ScoreDisplayProps> = ({ score, totalQuestions }) => {
+const formatTime = (seconds: number): string => {
+  if (seconds < 60) {
+    return `${seconds} seconds`;
+  }
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  return remainingSeconds > 0 
+    ? `${minutes}m ${remainingSeconds}s`
+    : `${minutes} minutes`;
+};
+
+const ScoreDisplay: FunctionComponent<ScoreDisplayProps> = ({ 
+  score, 
+  totalQuestions,
+  timeSpent
+}) => {
   const percentage = Math.round((score / totalQuestions) * 100);
   
   useEffect(() => {
@@ -22,8 +37,8 @@ const ScoreDisplay: FunctionComponent<ScoreDisplayProps> = ({ score, totalQuesti
         origin: { y: 0.6 }
       });
     }
-    saveScore(percentage, 0);
-  }, []);
+    saveScore(percentage, timeSpent);
+  }, [percentage, timeSpent]);
 
   return (
     <motion.div
@@ -41,16 +56,19 @@ const ScoreDisplay: FunctionComponent<ScoreDisplayProps> = ({ score, totalQuesti
             <Award className="w-16 h-16 text-bronze-500" />
           )}
         </div>
-
         <h2 className="text-2xl font-bold text-center mb-4">Quiz Complete!</h2>
         
         <div className="text-center mb-6">
           <div className="text-5xl font-bold text-primary-600 mb-2">
             {percentage}%
           </div>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-2">
             You got {score} out of {totalQuestions} questions correct
           </p>
+          <div className="flex items-center justify-center text-gray-600 mt-2">
+            <Clock className="w-5 h-5 mr-2" />
+            <span>Completed in {formatTime(timeSpent)}</span>
+          </div>
         </div>
 
         <div className="space-y-4">
@@ -70,7 +88,6 @@ const ScoreDisplay: FunctionComponent<ScoreDisplayProps> = ({ score, totalQuesti
               transition={{ delay: 0.5, duration: 0.8 }}
             />
           </motion.div>
-
           <div className="flex justify-center space-x-4">
             <a
               href="/quiz"
