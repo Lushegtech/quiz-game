@@ -16,11 +16,9 @@ const Leaderboard: FC = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Initialize scores after component mounts (client-side only)
     setScores(getHighScores());
     setIsLoading(false);
 
-    // Update scores if they change
     const updateScores = () => {
       setScores(getHighScores());
     };
