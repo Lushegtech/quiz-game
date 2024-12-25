@@ -4,7 +4,7 @@ This application is built using **Astro**,**TypeScript**, **React**, and **Tailw
 
 - **Leaderboard** to display top scores.
 - **Timer** for added challenge.
-- 📝 **Feedback modal** to collect user insights.
+- **Feedback modal** to collect user insights.
 - 📱 **Responsive design** for seamless interaction on any device.
 
 ---
