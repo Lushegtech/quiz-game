@@ -9,7 +9,7 @@ This application is built using **Astro**,**TypeScript**, **React**, and **Tailw
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To set up the project locally:
 
