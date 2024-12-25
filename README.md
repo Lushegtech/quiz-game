@@ -1,4 +1,4 @@
-# 📚 Quiz Game
+# Quiz Game
 
 This application is built using **Astro**,**TypeScript**, **React**, and **Tailwind CSS** for a user-centric quiz experience. Features include:
 
