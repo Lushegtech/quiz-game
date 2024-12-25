@@ -2,7 +2,7 @@
 
 This application is built using **Astro**,**TypeScript**, **React**, and **Tailwind CSS** for a user-centric quiz experience. Features include:
 
-- 🏆 **Leaderboard** to display top scores.
+- **Leaderboard** to display top scores.
 - ⏳ **Timer** for added challenge.
 - 📝 **Feedback modal** to collect user insights.
 - 📱 **Responsive design** for seamless interaction on any device.
